@@ -1,0 +1,26 @@
+[[package]]
+category = "dev"
+description = "A collection of tools for commmon package scripts"
+name = "jgt-tools"
+optional = false
+python-versions = ">=3.6,<4.0"
+version = "0.1.4"
+
+[package.dependencies]
+tomlkit = ">=0.5.3,<0.6.0"
+
+[[package]]
+category = "dev"
+description = "Style preserving TOML library"
+name = "tomlkit"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "0.5.5"
+
+[metadata]
+content-hash = "580725929c44f782a857858e60e98302e73bbc036fe4e82a88307f7559a418d2"
+python-versions = "^3.6"
+
+[metadata.hashes]
+jgt-tools = ["342992688da8747defa5247952ad84686ef0f7958c1d074bb084c8e7d940bbb7", "53ca91c2217daa2785382e12f510ee7dad2f80397953ab3e8ff5f7555df5316f"]
+tomlkit = ["a8d806f3a453c2d292afe97918398354e405b93919e2e68771a3fd0a90e89576", "c6b0c11b85e888c12330c7605d43c1446aa148cd421163f90ca46ea813f2c336"]
