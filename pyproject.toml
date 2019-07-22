@@ -2,20 +2,21 @@
 name = "jolly-good-toolbelt"
 version = "1.0.0"
 description = "Documentation"
-authors = ["Your Name <you@example.com>"]
+authors = ["Lewis Franklin <github@brolewis.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.6"
 
 [tool.poetry.dev-dependencies]
-jgt-tools = "^0.1.4"
-
-[build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
+jgt-tools = {version = "^0.2.2", extras = ["build_docs"]}
 
 [tool.jgt_tools]
 env_setup_commands = [
     "poetry run pip install --upgrade pip<19",
     "poetry install"
 ]
+doc_build_types = []
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
