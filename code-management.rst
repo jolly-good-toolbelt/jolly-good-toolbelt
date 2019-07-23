@@ -19,7 +19,7 @@ please see `Git Branches Considered Harmful`_.
 Repository Conventions
 ----------------------
 
-* Each repository should have, in the top level directory:
+* Each repository should have available:
 
   * ``README.md`` or ``README.rst`` explaining what it is,
     who the audience is, etc.
