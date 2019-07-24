@@ -1,0 +1,26 @@
+language: python
+python:
+- '3.6'
+branches:
+  only:
+  - master
+before_install:
+- sudo apt-get update
+- sudo apt-get install graphviz
+- pip install poetry
+install:
+- "./bootstrap.sh"
+script:
+- self-check
+- build-docs
+deploy:
+- provider: pages
+  skip_cleanup: true
+  github_token: "$GH_TOKEN"
+  local_dir: docs/
+env:
+  global:
+    secure: cGMyBFA3ur9uxE0eyDGzT83s4IA/ezc4B9tvLbrEqtz/SUr/63fLDOEwpR51YGSBmydug0/KNDRAUpFDGXt3w4RC4e6pm5yV2vSrEHU8dhJ/d8pByFeLNNhMkmJhjDB5dz5eD9s/TsIjVpPBGbFeGpG1gKEFyLTGFWmny/9XAHY6L99o9yiXjxftuwYSTjaQd+EHR8w1V/EljARjr7C3KEzxmwZiZS6dk5TXpDn5QeFv7Fm1lLrBcLJIg910zpuQ/UlLNZiuCQf+hqbTeMs0QeHgDT2ATpIEev5LLUopoZojRegKENakwjtlDMYSTS/DqwzHctfMODNhSFfqdEoGq2qcEqsqaKAFmwNSPPq4dK1L1tiWlvJL2ul1xX23rZc72xfqDuUMGU1gbonli877zVv3omahryghI23BVWlQuJU5kkkBqO1T+c8xN4+Koz7Hi7beIh9bZUZvH0/NghnVg9+45H4NU2S5qagAJiwSR1O/qdOSzvA70o7irSwTvaRa14dDr9HYbe3/osxyHpMVO7/OWPzk4dbrxtjPav93W50EyQHCS6bamt4EXZHkf1yIM6Wcx1BLe4m4E5xRiVC9SYheH+i/0hJ3/2TtXgRWW3syHSWHuPvFTuvS4DUzST0c2AhwxemeR/+iX22bx8aSyeHBLOKK2fCVbf22twL7DnY=
+notifications:
+  slack:
+    secure: LWKTrxR7Au2Pj5UHHAn6KQm1nDW8iiOZvurViLZbWvTCEpy75SaYsF4cllV0KYCM8rCNZHgf2A4A5RxT+IvUiQ+JEAZSCrgNyuHcspsKk+uwjJzOA22e5V6XVYEdxleO2PHV9RZKsU61j5oliLt/bbwTvadlVXkKGDif8Vh2kiZT6j9AIzABQpFCC6IpDUmji3Z1NjBJX5+FtOvTY+c2GMvB4imO/QemDqeN3ynUhWWoT2eucrZM+OZdg++WieXZwMI9P5fUgajQ1aJyT1rPCqQDAFlcXghD4orS9HjbUhFuEtX0yXf/2jGthL768DXfXCaA0MpF80yK4atrI0aut13m5iBW9W+D0xrWLMxNq9/wg8WCbRl04SGaVNHqwISSPNDINFR+i3IYyZ1CCjJhmgerHUQ/sb7M4el5Xgc8BjP2Ic4QAxMmK6gaekqSlCPz7iBTAYETsjDgp+RsXDozl5bwmuFy5kSXlha5yEFNNn1mvrmsT/pgcX2y6EChY03k75e/dYE9oetVw/YDD7Gtfp01LHlwWnwsOjU6GwKU3QpW0VOem2Ma/b/gpXL1U9mA7D0CqJZlFmGnQDMJLlftalgWF4Nwgxv0xNpi/jeRjkR41WWx2r+QqyRxpAemjpKINDpp2JRZJS0WuCt04VA1prt5FCL1yJjVYvNhPDGKTJs=
