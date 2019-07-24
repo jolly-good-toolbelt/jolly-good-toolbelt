@@ -1,0 +1,43 @@
+Jolly Good Toolbelt
+===================
+
+A collection of tools shared by jolly good developers.
+
+
+Libraries
+---------
+
+Several libraries have been created that can be installed via ``pip``:
+
+========================  ===================================================
+Library Name              Description
+========================  ===================================================
+`jgt_common`_             A library for helper functions across Jolly Good
+                          Toolbelt designed for larger consumption
+`jgt_tools`_              A collection of tools for commmon package scripts
+`jiratools`_              CLI Helpers for quick JIRA actions
+`jolly_github_toolbelt`_  A collection of tools around Git and GitHub to make
+                          developers' lives easier.
+`layered-config`_         A tool for managing layered config files!
+`sphinx-gherkindoc`_      A tool to convert Gherkin into Sphinx documentation
+`tableread`_              A library for converting reStructredText tables
+                          into Python objects
+========================  ===================================================
+
+In addition, there is a library for TypeScript to assist in UI visual regression testing:
+`testcafe-visual-regression`_.
+
+.. toctree::
+   :caption: Resource Documents
+
+   Code Management <code-management>
+   Coding Standards <coding-standards>
+
+.. _`jgt_common`: https://pypi.org/project/jgt-common/
+.. _`jgt_tools`: https://pypi.org/project/jgt-tools/
+.. _`jiratools`: https://pypi.org/project/jiratools/
+.. _`jolly_github_toolbelt`: https://pypi.org/project/jolly_github_toolbelt/
+.. _`layered-config`: https://pypi.org/project/layered-config/
+.. _`sphinx-gherkindoc`: https://pypi.org/project/sphinx-gherkindoc/
+.. _`tableread`: https://pypi.org/project/tableread/
+.. _`testcafe-visual-regression`: https://github.com/jolly-good-toolbelt/testcafe-visual-regression
