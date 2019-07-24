@@ -1,0 +1,500 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Code Management &mdash; jolly-good-toolbelt - Documentation 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Coding Standards" href="coding-standards.html" />
+    <link rel="prev" title="Jolly Good Toolbelt" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> jolly-good-toolbelt - Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Resource Documents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Code Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#repository-conventions">Repository Conventions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#general-code-management-policies">General Code Management Policies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#commit-management">Commit Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#commit-messages">Commit Messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pull-requests">Pull Requests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#collaborate-review">Collaborate / Review</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#all-participants">All Participants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#participating-as-a-reviewer">Participating As a Reviewer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#participating-as-an-author">Participating As an Author</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="coding-standards.html">Coding Standards</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gherkin-standards.html">Gherkin Standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gherkin-standards.html#gherkin-feature-file-coding-standard">Gherkin Feature File Coding Standard</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="python-standards.html">Python Standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="python-standards.html#coding-standards">Coding Standards</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">jolly-good-toolbelt - Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Code Management</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/code-management.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="code-management">
+<h1>Code Management<a class="headerlink" href="#code-management" title="Permalink to this headline">¶</a></h1>
+<p>We maintain a public repository with a single master branch.
+Each developer should create an account-level fork of that repository
+and clone that fork locally for development.</p>
+<p>Developers should submit changes via Pull Request for review and integration.
+For more information on why we use Forks and Pull Requests instead of branches,
+please see <a class="reference external" href="http://hintjens.com/blog:24">Git Branches Considered Harmful</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To prevent accidentally pushing to the upstream repository,
+update the update push URL to a non-valid URL.
+We recommend using DISABLE as a visual indicator:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="nb">set</span><span class="o">-</span><span class="n">url</span> <span class="o">--</span><span class="n">push</span> <span class="n">upstream</span> <span class="n">DISABLE</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="repository-conventions">
+<h2>Repository Conventions<a class="headerlink" href="#repository-conventions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Each repository should have available:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">README.md</span></code> or <code class="docutils literal notranslate"><span class="pre">README.rst</span></code> explaining what it is,
+who the audience is, etc.
+If applicable,
+this can simply be a link
+to the documentation built from a documentation tool.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">env-setup</span></code> a callable that sets up the environment:</p>
+<ul>
+<li><p>to be run by humans at will</p></li>
+<li><p>to be run (indirectly) via automation tooling
+(such as Jenkins or Travis CI)</p></li>
+<li><p>will fail if it is not running in a virtual environment (if appropriate)</p></li>
+<li><p>otherwise will install
+and configure the environment for testing</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">self-check</span></code> a callable that does a self-check on the repository:</p>
+<ul>
+<li><p>to be run by humans at will (such as before pull requests)</p></li>
+<li><p>to be run by automation tooling for pull request acceptance testing.</p></li>
+<li><p>This callable should support a –setup command line parameter
+which will invoke the env-setup script
+to make sure the environment is good
+before running self-check logic.</p></li>
+<li><p>automation tooling must always pass the –setup parameter
+to ensure the environment is up to date.</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">run-tests</span></code> a callable that handles the boilerplate of running tests:</p>
+<ul>
+<li><p>to be run by humans at will</p></li>
+<li><p>to be run by automation tooling for regular runs of test jobs</p></li>
+<li><p>this script should support a –check command line parameter
+which will invoke the self-check script with the –setup option
+to make sure the environment is good
+and the self-checks all pass</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">build-docs</span></code> a callable that handles building the repository
+documentation:</p>
+<ul>
+<li><p>to be run by humans at will</p></li>
+<li><p>to be run by automation tooling for pull request merges</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For the callables,
+use the appropriate language
+and extension for your environment.
+The <a class="reference external" href="https://pypi.org/project/jgt-tools/">jgt_tools</a> library provides all the callables
+for any Python-based project.</p>
+</div>
+</div>
+<div class="section" id="general-code-management-policies">
+<h2>General Code Management Policies<a class="headerlink" href="#general-code-management-policies" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="commit-management">
+<h3>Commit Management<a class="headerlink" href="#commit-management" title="Permalink to this headline">¶</a></h3>
+<p>Commits should be smaller, related commits
+rather than large and monolithic.
+Do not lump together unrelated code into a single commit,
+unless requested to squash a pull request by a reviewer.</p>
+</div>
+<div class="section" id="commit-messages">
+<h3>Commit Messages<a class="headerlink" href="#commit-messages" title="Permalink to this headline">¶</a></h3>
+<p>When doing a commit,
+we encourage following the format described in
+<a class="reference external" href="https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">A Note About Git Commit Messages</a>.</p>
+<p>It is recommended,
+although not required,
+to utilize the prefixes found in <a class="reference internal" href="#pull-requests">Pull Requests</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the pull request has only one commit,
+GitHub uses the commit message to try and pre-populate the title and comment.
+By following the suggested format above,
+the pull request title
+and comment should need minimal changes.
+If the prefix is used,
+the pull request title will have it
+which is where the prefix <strong>is</strong> required.</p>
+</div>
+</div>
+<div class="section" id="pull-requests">
+<h3>Pull Requests<a class="headerlink" href="#pull-requests" title="Permalink to this headline">¶</a></h3>
+<p>Each pull request must have a title and a comment.
+These should conform to the standards
+described in <a class="reference internal" href="#commit-messages">Commit Messages</a> with one addition:
+the title must be in the format of
+<code class="docutils literal notranslate"><span class="pre">&lt;Prefix&gt;:</span> <span class="pre">&lt;Title&gt;</span></code> where <code class="docutils literal notranslate"><span class="pre">&lt;Prefix&gt;</span></code> is one of the following:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 84%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Prefix</p></th>
+<th class="head"><div class="line-block">
+<div class="line">Use Case</div>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>&lt;Ticket_ID&gt;</p></td>
+<td><div class="line-block">
+<div class="line">Any commit related to a specific ticket</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Enhancement</p></td>
+<td><div class="line-block">
+<div class="line">Any enhancement outside of a ticket (should be small changes)</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Fix</p></td>
+<td><div class="line-block">
+<div class="line">Any fix outside of a ticket (should be small changes)</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>FF</p></td>
+<td><div class="line-block">
+<div class="line">A fast follow for a previous pull request (usually small very</div>
+<div class="line">specific changes, expected to be completed quickly after the</div>
+<div class="line">pull request merges)</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Spike</p></td>
+<td><div class="line-block">
+<div class="line">A proof-of-concept that may not be merged as-is;</div>
+<div class="line">can include a ticket ID</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A pull request should contain a single unit of work.
+The pull request should only add, remove, or change
+one feature / group of features.
+Do not bundle features together.
+Changes that need to be made
+across multiple repositories are acceptable,
+but reference the partnering pull requests within each other.
+To quote the <a class="reference external" href="https://www.kernel.org/doc/Documentation/SubmittingPatches">Linux kernel submission guidelines</a>:</p>
+<blockquote>
+<div><p>For example, if your changes include both bug fixes
+and performance enhancements for a single driver,
+separate those changes into two or more patches.
+If your changes include an API update,
+and a new driver which uses that new API,
+separate those into two pull requests.</p>
+<p>On the other hand,
+if you make a single change to numerous files,
+group those changes into a single pull request.
+Thus a single logical change
+is contained within a single pull request.</p>
+<p>The point to remember is
+that each pull request should make
+an easily understood change
+that can be verified by reviewers.
+Each pull request should be justifiable
+on its own merits.</p>
+</div></blockquote>
+<p>The final step before creating a pull request
+is to assign the appropriate reviewers.
+See <a class="reference internal" href="#collaborate-review">Collaborate / Review</a> to help determine
+the appropriate first reviewer(s).</p>
+</div>
+<div class="section" id="collaborate-review">
+<h3>Collaborate / Review<a class="headerlink" href="#collaborate-review" title="Permalink to this headline">¶</a></h3>
+<p>Any pull request submission needs to be reviewed
+by at one least two people.
+The final reviewer is responsible
+for merging the pull request.</p>
+<p>Once a pull request is ready,
+assign all eligible members for review.
+This can be tweaked if there is a previous arrangement,
+such as when a particular individual is invested in the changes being made
+or a small group has worked heavily in one area.
+In that case, the assignment may be more focused.</p>
+<div class="section" id="all-participants">
+<h4>All Participants<a class="headerlink" href="#all-participants" title="Permalink to this headline">¶</a></h4>
+<p>Try to keep all discussion contained within the pull request.
+If a discussion occurs outside of the pull request comments
+(e.g., video chat),
+a summary of the discussion should be added
+as a comment by the current assignee.</p>
+<p>Once the pull request has been submitted,
+each iteration should be completed
+within one business day.
+If more time is needed,
+please post a comment informing all participants.</p>
+<div class="note admonition">
+<p class="admonition-title">Treat Others Like Friends and Family</p>
+<p>It is always a good reminder
+that during a pull request code review,
+it is the code being reviewed,
+not the coder.
+When leaving a comment as a part of a pull request,
+ensure that the comments address the code
+and not the coder.
+When reading a comment,
+remember that the pull review process is intended
+as a mechanism for improving the code base
+and is a mechanism for facilitating that improvement
+rather than speaking negatively about an individual or their abilities.</p>
+</div>
+</div>
+<div class="section" id="participating-as-a-reviewer">
+<h4>Participating As a Reviewer<a class="headerlink" href="#participating-as-a-reviewer" title="Permalink to this headline">¶</a></h4>
+<p>When starting to review a pull request,
+please remove any other reviewers.</p>
+<p>If approving the pull request,
+and you are not the final reviewer,
+assign it to everyone who has not yet reviewed.
+if the final reviewer,
+merge the pull request.</p>
+<p>If requesting changes,
+assign the pull request back to the original author.</p>
+<p>If providing comments,
+you can either assign back to the original author for respone,
+or assign it to everyone who has not yet reviewed
+so that the review process may continue to flow.</p>
+</div>
+<div class="section" id="participating-as-an-author">
+<h4>Participating As an Author<a class="headerlink" href="#participating-as-an-author" title="Permalink to this headline">¶</a></h4>
+<p>When participating as an author for a code review,
+if any comments are added or changes are requested,
+make the necessary changes,
+answer any questions,
+and assign the pull request back to
+the individual requesting the changes.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="coding-standards.html" class="btn btn-neutral float-right" title="Coding Standards" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Jolly Good Toolbelt" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Lewis Franklin
+      
+        <span class="build">
+          Build
+          <a href="https://github.com/jolly-good-toolbelt/jolly-good-toolbelt/tree/f5502f3611489854b17c8073e924a84599b57d8b">f5502f3611489854b17c8073e924a84599b57d8b</a>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

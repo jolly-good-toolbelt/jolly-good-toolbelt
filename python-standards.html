@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Python Coding Standards and Recommendations &mdash; jolly-good-toolbelt - Documentation 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Gherkin" href="gherkin-standards.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> jolly-good-toolbelt - Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Resource Documents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="code-management.html">Code Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="code-management.html#repository-conventions">Repository Conventions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code-management.html#general-code-management-policies">General Code Management Policies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="code-management.html#commit-management">Commit Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="code-management.html#commit-messages">Commit Messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="code-management.html#pull-requests">Pull Requests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="code-management.html#collaborate-review">Collaborate / Review</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="code-management.html#all-participants">All Participants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code-management.html#participating-as-a-reviewer">Participating As a Reviewer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code-management.html#participating-as-an-author">Participating As an Author</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="coding-standards.html">Coding Standards</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gherkin-standards.html">Gherkin Standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gherkin-standards.html#gherkin-feature-file-coding-standard">Gherkin Feature File Coding Standard</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Python Standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#coding-standards">Coding Standards</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">jolly-good-toolbelt - Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="coding-standards.html">Coding Standards</a> &raquo;</li>
+        
+      <li>Python Coding Standards and Recommendations</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/python-standards.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="python-coding-standards-and-recommendations">
+<h1>Python Coding Standards and Recommendations<a class="headerlink" href="#python-coding-standards-and-recommendations" title="Permalink to this headline">¶</a></h1>
+<p>By and large, we utilizing available tools
+to help format and lint the code
+to keep it consistent and readable.
+Outside of what those tools can provide,
+we do have some suggested guidelines as well.</p>
+<p>Code should be written not only to be executed by a machine
+but also to be read and maintained.
+Thus, the purpose of coding standards
+is not to impede the development process of individual developers,
+but to help ensure that the code meets a minimum standard of readability.</p>
+<div class="section" id="coding-standards">
+<h2>Coding Standards<a class="headerlink" href="#coding-standards" title="Permalink to this headline">¶</a></h2>
+<p>Some standards that cannot be easily handled by available tooling and linters:</p>
+<ul class="simple">
+<li><p>Names should be descriptive. Follow the <a class="reference external" href="https://medium.com/mutual-of-omaha-digital-experience-and-design-team/damp-programming-reviving-readability-d84647cc5b2e">DAMP</a> principle.
+With the exception of loops, generator expressions, and comprehensions,
+there should never be single letter variable/class/etc names in the code.</p></li>
+<li><p>Comment code sections that are
+not readily apparent in their purpose.</p></li>
+<li><p>Keep methods small and atomic.</p></li>
+<li><p>Keep object oriented principles in mind
+(inheritance, encapsulation, etc.).</p></li>
+<li><p>Delete dead code.
+We are using version control
+that lets us go back and retrieve it if needed.</p></li>
+<li><p>Don’t add speculative
+or “will need this soon” code.
+Such code should be added
+along with the code that will use it,
+otherwise it is just dead code.</p></li>
+<li><p>Abstract code where possible.</p></li>
+<li><p>Look for patterns
+and create a generic method.</p></li>
+<li><p>Use external mechanisms for setting parameters
+(config files, databases, etc.).</p></li>
+<li><p>Don’t hard-code test data.</p></li>
+<li><p>Follow the <a class="reference external" href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a> principle.</p></li>
+<li><p>Raise exceptions,
+don’t return error code values.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="gherkin-standards.html" class="btn btn-neutral float-left" title="Gherkin" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Lewis Franklin
+      
+        <span class="build">
+          Build
+          <a href="https://github.com/jolly-good-toolbelt/jolly-good-toolbelt/tree/f5502f3611489854b17c8073e924a84599b57d8b">f5502f3611489854b17c8073e924a84599b57d8b</a>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
